@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>🍽️ Offline Recipe Explorer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>🍽️ Recipe Explorer</h1>
+
+  <div class="filters">
+    <select id="mood">
+      <option value="">All Moods</option>
+      <option value="Comforting">Comforting</option>
+      <option value="Light">Light</option>
+      <option value="Adventurous">Adventurous</option>
+    </select>
+    <select id="taste">
+      <option value="">All Tastes</option>
+      <option value="Spicy">Spicy</option>
+      <option value="Sweet">Sweet</option>
+      <option value="Savory">Savory</option>
+    </select>
+    <select id="time">
+      <option value="">Any Time</option>
+      <option value="15">≤15 min</option>
+      <option value="30">≤30 min</option>
+      <option value="60">≤60 min</option>
+    </select>
+    <button onclick="filterRecipes()">Search</button>
+  </div>
+
+  <div class="recipes" id="recipesContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
